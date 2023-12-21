@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tính Thuế Thu Nhập Cá Nhân</h1>
+
+    <label for="hoTen">Họ và Tên:</label>
+    <input type="text" id="hoTen" required />
+
+    <label for="tongThuNhap">Tổng Thu Nhập Năm (VNĐ):</label>
+    <input type="number" id="tongThuNhap" min="0" required />
+
+    <label for="soNguoiPhuThuoc">Số Người Phụ Thuộc:</label>
+    <input type="number" id="soNguoiPhuThuoc" min="0" required />
+
+    <button onclick="tinhThue()">Tính Thuế</button>
+
+    <p id="ketQua"></p>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>

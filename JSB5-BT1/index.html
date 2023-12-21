@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý tuyển sinh</title>
+  </head>
+  <body>
+    <h1>Quản lý tuyển sinh</h1>
+
+    <label for="diemChuan">Điểm chuẩn:</label>
+    <input type="number" id="diemChuan" placeholder="Nhập điểm chuẩn" />
+
+    <br />
+
+    <label for="diemToan">Điểm môn Toán:</label>
+    <input type="number" id="diemToan" placeholder="Nhập điểm Toán" />
+
+    <br />
+
+    <label for="diemLy">Điểm môn Lý:</label>
+    <input type="number" id="diemLy" placeholder="Nhập điểm Lý" />
+
+    <br />
+
+    <label for="diemHoa">Điểm môn Hóa:</label>
+    <input type="number" id="diemHoa" placeholder="Nhập điểm Hóa" />
+
+    <br />
+
+    <label for="khuVuc">Khu vực ưu tiên:</label>
+    <input type="text" id="khuVuc" placeholder="Nhập x nếu không ưu tiên" />
+
+    <br />
+
+    <label for="doiTuong">Đối tượng ưu tiên:</label>
+    <input type="number" id="doiTuong" placeholder="Nhập 0 nếu không ưu tiên" />
+
+    <br />
+
+    <button onclick="tinhDiem()">Tính điểm</button>
+
+    <p id="ketQua"></p>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

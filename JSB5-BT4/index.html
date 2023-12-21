@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính Hóa Đơn Cáp</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tính Hóa Đơn Cáp</h1>
+
+    <input type="text" id="maKhachHang" placeholder="Mã Khách Hàng" required />
+
+    <select id="loaiKhachHang" onchange="hienThiNhapKetNoi()">
+      <option value="loaiKhachHang">Chọn loại khách hàng</option>
+      <option value="nhaDan">Nhà Dân</option>
+      <option value="doanhNghiep">Doanh Nghiệp</option>
+    </select>
+
+    <input
+      type="number"
+      id="soKetNoi"
+      placeholder="Số Kết Nối"
+      min="0"
+      style="display: none"
+    />
+
+    <input
+      type="number"
+      id="soKenhCaoCap"
+      placeholder="Số Kênh Cao Cấp"
+      min="0"
+    />
+
+    <button onclick="tinhHoaDon()">Tính Hóa Đơn</button>
+
+    <p id="ketQua"></p>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>

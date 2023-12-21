@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính Tiền Điện</title>
+  </head>
+  <body>
+    <h1>Tính tiền điện</h1>
+
+    <label for="hoTen">Họ và Tên:</label>
+    <input type="text" id="hoTen" required />
+    <label for="soDien">Nhập số điện tiêu thụ (kW):</label>
+    <input type="number" id="soDien" min="0" required />
+
+    <button onclick="tinhTienDien()">Tính Tiền</button>
+
+    <p id="ketQua"></p>
+
+    <!-- JS -->
+    <script src="./index.js"></script>
+  </body>
+</html>
